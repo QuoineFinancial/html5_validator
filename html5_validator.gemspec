@@ -5,11 +5,11 @@ require "html5_validator/version"
 Gem::Specification.new do |s|
   s.name        = "html5_validator"
   s.version     = Html5Validator::VERSION
-  s.authors     = ["Damian Nicholson"]
-  s.email       = ["damian.nicholson21@gmail.com"]
+  s.authors     = ["Damian Nicholson", "Tam Vo"]
+  s.email       = ["damian.nicholson21@gmail.com", "vo.mita.ov@gmail.com"]
   s.homepage    = "http://github.com/damian/html5_validator"
-  s.summary     = %q{Ruby gem to test for valid HTML5 markup with RSpec}
-  s.description = %q{Ruby gem to test for valid HTML5 markup with RSpec}
+  s.summary     = %q{Ruby gem to test for valid HTML5 markup}
+  s.description = %q{Ruby gem to test for valid HTML5 markup}
 
   s.rubyforge_project = "html5_validator"
 
@@ -18,7 +18,5 @@ Gem::Specification.new do |s|
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.add_dependency "json"
   s.add_dependency "rest-client"
-  s.add_dependency "rspec"
-  s.add_dependency "rspec-collection_matchers", "~> 1.0.x"
   s.require_paths = ["lib"]
 end
